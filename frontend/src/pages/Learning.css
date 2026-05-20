@@ -1,0 +1,369 @@
+.learning-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.learning-breadcrumb a {
+  color: var(--text-light);
+}
+
+.learning-breadcrumb a:hover {
+  color: var(--primary-color);
+}
+
+.learning-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.learning-title h2 {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.learning-title p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.mark-complete-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learning-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.video-player-container {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--sidebar-bg);
+  margin-bottom: 1.5rem;
+}
+
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+  background-color: #231f40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video-overlay {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+}
+
+.html-logo {
+  height: 120px;
+}
+
+.video-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.video-controls {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1a172c;
+  color: white;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-text {
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.video-progress {
+  flex: 1;
+  height: 6px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-progress-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.video-progress-thumb {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.playback-rate {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.learning-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-light);
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.overview-tab {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.overview-left h3 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+}
+
+.overview-left p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.overview-left h4 {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.learning-points {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.learning-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.lesson-stats {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-icon-wrap {
+  width: 40px;
+  height: 40px;
+  background-color: #f3f0ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 0.2rem;
+}
+
+.stat-val {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.lesson-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.lesson-navigation .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.course-content-card .card-header {
+  padding: 1.25rem 1.5rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+.accordion-header:hover {
+  background-color: #f8fafc;
+}
+
+.sec-title strong {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.sec-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-light);
+}
+
+.sec-progress {
+  font-size: 0.85rem;
+}
+
+.accordion-body {
+  background-color: #f8fafc;
+  padding: 0.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 1px solid transparent;
+}
+
+.lesson-row:hover {
+  border-color: var(--border-color);
+}
+
+.lesson-row.active {
+  background-color: #f3f0ff;
+  border-color: #e0d4fc;
+}
+
+.lesson-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.lesson-name {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.lesson-row.active .lesson-name {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.lesson-time {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.resource-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.resource-icon-wrap {
+  width: 45px;
+  height: 45px;
+  background-color: #f3f0ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-info h4 {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.resource-info a {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+}

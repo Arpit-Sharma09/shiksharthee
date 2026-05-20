@@ -1,0 +1,31 @@
+.dashboard-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+
+.dashboard-main {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+}
+
+.dashboard-content.sidebar-open {
+  margin-left: 250px;
+}
+
+/* Sidebar toggle logic */
+.sidebar {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}

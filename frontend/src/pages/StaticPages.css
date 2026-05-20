@@ -1,0 +1,164 @@
+.static-page {
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.static-container {
+  padding: 4rem 2rem;
+}
+
+.static-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.static-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.static-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.static-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section li {
+  margin-bottom: 0.8rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.about-section strong {
+  color: var(--text-dark);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info, .contact-form-container, .feedback-form-container {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.feedback-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info h3, .contact-form-container h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item span {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.static-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.static-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.static-form input, .static-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.static-form input:focus, .static-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.static-form button {
+  width: 100%;
+  padding: 1rem;
+}
+
+.status-msg {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status-msg.success {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.status-msg.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
